@@ -19,7 +19,7 @@
     <form class="form-inline mb-3">
       <input type="text" class="form-control mr-2">
       <input type="submit" class="btn btn-dark" value="Submit">
-    </form>
+    </form> 
     <h2 class="title">Items</h2>
     <ul id="items" class="list-group">
       <li class="list-group-item">Item 1</li>
@@ -30,6 +30,17 @@
     </ul>
    </div>
   </div>
+  <script>
+  var title=document.querySelectorAll(".title");
+  var odd=document.querySelectorAll("li:nth-child(odd)");
+  var even=document.querySelectorAll('li:nth-child(even)');
+  for(var i=0;i<odd.length;i++){
+    odd[i].style.backgroundColor='#7FFF00';
+    even[i].style.backgroundColor='#abb69c';
+  }
+
+
+  </script>
 
 </body>
 </html>
