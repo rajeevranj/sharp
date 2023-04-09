@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <title>Item Lister</title>
+</head>
+<body>
+  <header id="main-header" class="bg-success text-white p-4 mb-3">
+    <div class="container">
+      <h1 id="header-title">Item Lister <span style="display:none">123</span></h1>
+    </div>
+  </header>
+  <div class="container">
+   <div id="main" class="card card-body">
+    <h2 class="title">Add Items</h2>
+    <form class="form-inline mb-3">
+      <input type="text" class="form-control mr-2">
+      <input type="submit" class="btn btn-dark" value="Submit">
+    </form> 
+    <h2 class="title">Items</h2>
+    <ul id="items" class="list-group">
+      <li class="list-group-item">Item 1</li>
+      <li class="list-group-item">Item 2</li>
+      <li class="list-group-item">Item 3</li>
+      <li class="list-group-item">Item 4</li>
+      <li>Item 5</li>
+    </ul>
+   </div>
+  </div>
+  <script>
+    var itemlist=document.querySelector('#items');
+
+    //ParentNode
+    //console.log(itemlist.parentNode);
+    //itemlist.parentNode.style.backgroundColor='#f4f4f4';
+    //confirm.log(itemlist.parentNode.parentNode.parentNode);
+
+    //paraentElement
+    //console.log(itemlist.parentElement);
+    //itemlist.parentElement.style.backgroundColor='#f4f4f4';
+    //confirm.log(itemlist.parentElement.parentElement.parentElement);
+
+    //childnode
+    //console.log(itemlist.childNodes);
+
+
+    //console.log(itemlist.children);
+    //console.log(itemlist.children[1]);
+    //itemlist.children[1].style.backgroundColor='red';
+
+
+    //firstChild
+    //console.log(itemlist.firstChild);
+    //firstelementchild
+    //console.log(itemlist.firstElementChild);
+    //itemlist.firstElementChild.textContent='rajeev';
+
+
+    //lastchild
+    //console.log(itemlist.lastChild);
+    
+    //lastelementchild
+    //console.log(itemlist.lastElementChild);
+    //itemlist.lastElementChild.textContent='hello';
+
+    //nextSiblings
+    //console.log(itemlist.nextSibling);
+
+    //nextelementsiblings
+    //console.log(itemlist.nextElementSibling);
+   
+   //previoussibling
+   //console.log(itemlist.previousSibling);
+
+   //previouselementsibling
+   //console.log(itemlist.previousElementSibling);
+   //itemlist.previousElementSibling.style.backgroundColor='green';
+
+    
+
+
+    //createDiv
+    var newDiv=document.createElement('div');
+  
+    //add class
+   newDiv.className='hello';
+
+  //add id
+  newDiv.id='hello1';
+
+  //add attribute
+  newDiv.setAttribute('title','hello div');
+
+  //create a text node
+  var newDivtext=document.createTextNode('hello world');
+   
+  //add text to div
+  newDiv.appendChild(newDivtext);
+  var container=document.querySelector('header.container');
+  var h1=document.querySelector('header h1');
+
+
+  console.log(newDiv)
+
+  newDiv.style.fontSize='40px';
+
+  container.insertBefore(newDiv,h1);
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>
